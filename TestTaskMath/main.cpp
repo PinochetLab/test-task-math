@@ -85,13 +85,13 @@ Vec find_closest_point(Vec center, f_t radius, Vec normal, Vec point) {
 int main() {
 	Vec center, normal, point;
 	f_t radius;
-	std::cout << "¬ведите координаты центра окружности/n";
+	std::cout << "Enter circle center coordinates\n";
 	std::cin >> center;
-	std::cout << "¬ведите радиус окружности/n";
+	std::cout << "Enter circle radius\n";
 	std::cin >> radius;
-	std::cout << "¬ведите A, B и C плоскости, проход€щей через центр окружности/n";
+	std::cout << "Enter A, B and C of plane passing through circle center\n";
 	std::cin >> normal;
-	std::cout << "¬ведите координаты точки/n";
+	std::cout << "Enter point coordinates\n";
 	std::cin >> point;
 	auto v = find_closest_point(center, radius, normal, point);
 	std::cout << v;
